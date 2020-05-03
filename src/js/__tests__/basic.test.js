@@ -12,7 +12,7 @@ describe('findBy', () => {
     const expected = [{ name: 'урон', type: 'help', description: 'Страница описания элемента интерфейса' }];
     expect(result).toEqual(expected);
   });
-  test('name: урон', () => {
+  test('type: attack', () => {
     const result = arrForSearch.filter(findBy('type', 'attack'));
     const expected = [{ name: 'заклинание', type: 'attack', description: 'Атака магическим заклинанием' }];
     expect(result).toEqual(expected);
